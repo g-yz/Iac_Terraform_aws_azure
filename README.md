@@ -7,10 +7,10 @@
 
 ## Install packer and terraform
 
-´´´ssh
+```ssh
 choco install packer
 choco install terraform
-´´´
+```
 
 https://developer.hashicorp.com/packer
 https://developer.hashicorp.com/terraform
@@ -19,52 +19,52 @@ https://developer.hashicorp.com/terraform
 
 ### Credentials
 
-´´´ssh
+```ssh
 export AWS_ACCESS_KEY_ID="xxxxxxxxxxxxxxx"
 export AWS_SECRET_ACCESS_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-´´´
+```
 
 ### Build
 
-´´´ssh
+```ssh
 packer init .
 packer validate
 packer build aws-nodejs.pkr.hcl
-´´´
+```
 
 ### Deploy
 
-´´´ssh
+```ssh
 terraform init
 terraform validate
 terraform plan
 terraform apply
-´´´
+```
 
 ## Azure
 
 ### Credentials
 
-´´´ssh
+```ssh
 export ARM_CLIENT_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 export ARM_CLIENT_SECRET="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 export ARM_SUBSCRIPTION_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 export ARM_TENANT_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-´´´
+```
 
 ### Build
 
-´´´ssh
+```ssh
 packer init .
 packer validate
 packer build azure-nodejs.pkr.hcl
-´´´
+```
 
 ### Deploy
 
-´´´ssh
+```ssh
 terraform init
 terraform validate
 terraform plan
 terraform apply
-´´´
+```
