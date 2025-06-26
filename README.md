@@ -1,4 +1,11 @@
-# Install packer and terraform
+# IaC using Packer and terraform
+
+## Architecture
+
+![Architecture](https://drive.google.com/uc?export=view&id=16cYXpYYu95shQJymT9azjGsC1SJL2X6i)
+
+
+## Install packer and terraform
 
 ´´´
 choco install packer
@@ -8,16 +15,16 @@ choco install terraform
 https://developer.hashicorp.com/packer
 https://developer.hashicorp.com/terraform
 
-# AWS
+## AWS
 
-## Credentials
+### Credentials
 
 ´´´
 export AWS_ACCESS_KEY_ID="xxxxxxxxxxxxxxx"
 export AWS_SECRET_ACCESS_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ´´´
 
-## Build
+### Build
 
 ´´´
 packer init .
@@ -25,7 +32,7 @@ packer validate
 packer build aws-nodejs.pkr.hcl
 ´´´
 
-## Deploy
+### Deploy
 
 ´´´
 terraform init
@@ -34,9 +41,9 @@ terraform plan
 terraform apply
 ´´´
 
-# Azure
+## Azure
 
-## Credentials
+### Credentials
 
 ´´´
 export ARM_CLIENT_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
@@ -45,7 +52,7 @@ export ARM_SUBSCRIPTION_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 export ARM_TENANT_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ´´´
 
-## Build
+### Build
 
 ´´´
 packer init .
@@ -53,7 +60,7 @@ packer validate
 packer build azure-nodejs.pkr.hcl
 ´´´
 
-## Deploy
+### Deploy
 
 ´´´
 terraform init
