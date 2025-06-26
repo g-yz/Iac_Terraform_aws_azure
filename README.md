@@ -2,7 +2,7 @@
 
 ## Architecture
 
-![Architecture](https://drive.google.com/uc?export=view&id=15tLvjcpAi2MJJQjzmgiXSHWycf)
+![Architecture](https://drive.google.com/uc?export=view&id=15tLvjcpAi2MJJQjzmgiXSHWycf_RgxLu)
 
 
 ## Install packer and terraform
