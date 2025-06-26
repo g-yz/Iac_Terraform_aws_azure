@@ -1,0 +1,6 @@
+resource_group_name = "packer-images-rg"
+location            = "East US"
+image_name          = "ubuntu-base-image"
+vm_name             = "nodejs-vm"
+admin_username      = "azureuser"
+public_key_path     = "~/.ssh/id_rsa.pub"
